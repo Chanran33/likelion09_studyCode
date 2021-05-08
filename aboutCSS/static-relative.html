@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>static과 relative 비교</title>
+    <style>
+        /* margin 0으로 기본 브라우저의 CSS를 없애줌*/
+        body {
+            background-color: skyblue;
+            margin: 0;
+        }
+
+        #parent {
+            background-color: pink;
+            width: 200px;
+            height: 200px;
+            position: relative;
+            top: 50px;
+            left: 50px;
+        }
+
+        #child1 {
+            background-color: lemonchiffon;
+            width: 100px;
+            height: 100px;
+            position: relative;
+            top: 20px;
+            left: 20px;
+        }
+
+        #child2 {
+            background-color: red;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        /* position이 static일 때 있어야 할 자리에서 움직임->기본위치*/
+    </style>
+</head>
+
+<body>
+    <div id="parent">
+        <div id="child1">
+            child1
+        </div>
+        <div id="child2">
+            child2
+        </div>
+    </div>
+</body>
+
+</html>

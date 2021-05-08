@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>테이블과 리스트에 관련된 태그를 알아보자</title>
+</head>
+<body>
+    <!-- 위쪽에 제목이 있는 테이블-->
+    <table border="2">
+        <tr>
+            <th>성별</th>
+            <th>학년</th>
+            <th>이름</th>
+        </tr>
+        <tr>
+            <td>남</td>
+            <td>3</td>
+            <td>수OO</td>
+        </tr>
+        <tr>
+            <td>여</td>
+            <td>3</td>
+            <td>김OO</td>
+        </tr>
+    </table>
+    
+    <br>
+
+    <!-- 왼쪽에 제목이 있는 테이블-->
+    <table border="1">
+        <tr>
+            <th>성별</th>
+            <td>남</td>
+            <td>여</td>
+        </tr>
+        <tr>
+            <th>학년</th>
+            <td>3</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <th>이름</th>
+            <td>수OO</td>
+            <td>김OO</td>
+        </tr>
+    </table>
+    
+    <br>
+
+    <!-- 열이 병합된 테이블-->
+    <table border="1">
+        <tr>
+            <th>성별</th>
+            <td>남</td>
+            <td>여</td>
+        </tr>
+        <tr>
+            <th>학년</th>
+            <td colspan="2">3</td>
+        </tr>
+        <tr>
+            <th>이름</th>
+            <td>수OO</td>
+            <td>김OO</td>
+        </tr>
+    </table>
+    
+    <br>
+
+    <!-- 순서 없는 리스트 -->
+    <h3>장보기 목록</h3>
+    <ul>
+        <li>파스타 면</li>
+        <li>토마토 로제 소스</li>
+        <li>우유</li>
+    </ul>
+
+    <!-- 순서 있는 리스트 -->
+    <h3> To-Do 리스트</h3>
+    <ol>
+        <li>책 읽기</li>
+        <li>운동하기</li>
+        <li>공부하기</li>
+    </ol>
+
+    <!-- 순서 있는 리스트 -->
+    <h3> To-Do 리스트</h3>
+    <ol>
+        <li>책 읽기</li>
+        <li>운동하기
+            <ul>
+                <li>스쿼트 5세트</li>
+                <li>런지 5세트</li>
+            </ul>
+        </li>
+        <li>공부하기</li>
+    </ol>
+
+    <!-- ol 태그의 start 속성 -->
+    <h3> To-Do 리스트</h3>
+    <ol start="4">
+        <li>책 읽기</li>
+        <li>운동하기
+            <ul>
+                <li>스쿼트 5세트</li>
+                <li>런지 5세트</li>
+            </ul>
+        </li>
+        <li>공부하기</li>
+    </ol>
+
+    <!-- ol 태그의 type 속성 -->
+    <h3> To-Do 리스트</h3>
+    <ol start="4" type="I">
+        <li>책 읽기</li>
+        <li>운동하기
+            <ul>
+                <li>스쿼트 5세트</li>
+                <li>런지 5세트</li>
+            </ul>
+        </li>
+        <li>공부하기</li>
+    </ol>
+
+    <!-- ol 태그의 reversed 속성 -->
+    <h3> To-Do 리스트</h3>
+    <ol reversed>
+        <li>책 읽기</li>
+        <li>운동하기
+            <ul>
+                <li>스쿼트 5세트</li>
+                <li>런지 5세트</li>
+            </ul>
+        </li>
+        <li>공부하기</li>
+    </ol>
+
+    <!-- li 태그의 value 속성 -->
+    <h3> To-Do 리스트</h3>
+    <ol>
+        <li>책 읽기</li>
+        <li value="7">운동하기
+            <ul>
+                <li>스쿼트 5세트</li>
+                <li>런지 5세트</li>
+            </ul>
+        </li>
+        <li>공부하기</li>
+    </ol>
+</body>
+</html> 

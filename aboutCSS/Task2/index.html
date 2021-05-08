@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyBlog</title>
+    <style>
+        /*기본 설정*/
+        * { box-sizing:border-box; } /* border까지 합쳐서 전체 크기라 칭하는 것*/
+        body{ margin: 0;}
+        a{ text-decoration: none; }
+        /* 영역 구분을 쉽게 하기 위해 배경 색 지정*/
+        header{ background-color: #9C6644;}
+        nav{ background-color: #FFE8D6;}
+        #main{ background-color: #6B705C; }
+        article{ background-color: #B7B7A4; }
+        footer{ background-color: #DDB892;}
+
+        /*main 꾸미기*/
+        #main{
+            display: flex; /*flex 레이아웃을 사용하기 위해 선언*/
+            justify-content: center;
+        }
+        section{
+            width: 70%;
+            padding: 20px;
+        }
+        section > h2{
+            color: white
+        }
+        article{
+            height:150px;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        /*navbar 꾸미기*/
+        .navbar{
+            display: flex; 
+            justify-content: flex-end;
+            padding: 0px 10px 0px 10px
+        }
+        .navbar > a{
+            padding : 10px;
+            color: #7F5539;
+            font-weight: bold;
+        }
+        #home{
+            margin-right: auto; /* home만 왼쪽으로 보낼 수 있음*/
+        }
+        .navbar > a:hover{
+            color:white;
+            background-color: #7F5539;
+        }        
+        .header{
+            padding: 15px;
+            text-align: center;
+            color: white;
+        }
+        footer{
+            padding: 15px;
+        }
+        footer > a{
+            padding-left: 20px;
+            color : #7F5539;
+            font-weight: bold;
+        }
+        footer > a:hover{
+            color : white;
+        }
+        /*footer 맨 밑에 고정시키기*/
+        html, body{
+            height: 100%
+        }
+
+        body{
+            display: flex;
+            flex-direction: column;
+        }
+
+        #main{
+            flex:1 /*대충 main은 컨테이너 크기가 늘어나면 거기에 맞춘다는 뜻*/
+        }
+
+        .footer{
+            flex-shrink: 0; /*대충 footer는 컨테이너 크기가 줄어들어도 거기에 맞춰 줄어들지 않는다는 뜻*/
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <h1>My Blog</h1>
+    </header>
+    <nav class="navbar">
+        <a href="" id="home">Home</a>
+        <a href="">About me</a>
+        <a href="">My Diary</a>
+        <a href="">My Gallery</a>
+    </nav>
+    <div id="main">
+        <section class="section">
+            <h2>About Me</h2>
+            <article class="article">
+                about me의 내용
+            </article>
+            <h2>My Diary</h2>
+            <article class="article">
+                My Diary의 내용
+            </article>
+            <h2>My Gallery</h2>
+            <article class="article">
+                My Gallery의 내용
+            </article>
+        </section>
+    </div>
+    <footer>
+        <a href="https://github.com/Chanran33/" target="_blank">My Github</a>
+    </footer>
+</body>
+
+</html>
